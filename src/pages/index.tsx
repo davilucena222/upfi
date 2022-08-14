@@ -22,6 +22,8 @@ interface GetImagesResponse {
 }
 
 export default function Home(): JSX.Element {
+
+  //retornando dados do FaunaDB sem precisar modificá-los
   async function fetchImage({pageParam = null}): Promise<GetImagesResponse> {
     const {data} = await api("api/images", {
       params: {
@@ -39,15 +41,23 @@ export default function Home(): JSX.Element {
     isFetchingNextPage,
     fetchNextPage,
     hasNextPage,
-  } = useInfiniteQuery('images', fetchImage, {
-    getNextPageParam
+  } = useInfiniteQuery('images', fetchImage, { //retornando dados da função de fetchImages para o useInfiniteQuery() e depois precisa modificar os dados, pois o useInfiniteQuery() os modificou
+    getNextPageParam: (lastPage) => lastPage?.after || null,
   });
 
   const formattedData = useMemo(() => {
-    // TODO FORMAT AND FLAT DATA ARRAY
+    const formatted = data?.pages.flatMap(imageData => {
+      return imageData.data.flat();
+    });
   }, [data]);
 
-  // TODO RENDER LOADING SCREEN
+  if (isLoading && !isError) {
+    return <Loading />;
+  }
+
+  if (!isLoading && isError) {
+    return <Error />;
+  }
 
   // TODO RENDER ERROR SCREEN
 
