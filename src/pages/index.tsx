@@ -30,9 +30,7 @@ export default function Home(): JSX.Element {
         after: pageParam,
       }
     });
-
-    console.log(data);
-
+    
     return data;
   }
 
