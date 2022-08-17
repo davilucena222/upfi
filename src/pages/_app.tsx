@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import { theme } from '../styles/theme';
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ pageProps, Component }: AppProps): JSX.Element {
   const queryClient = new QueryClient();
 
   return (
