@@ -29,7 +29,7 @@ This project was developed with the following tecnologies:
 <p>
   Upfi is an application that supports image upload, you can upload your images and store them all in this platform. All images informations will be stored at Fauna DB and the images will be hosted at ImgBB.
   
-  Let's go! Pick up a image and try it.
+  Let's go! Pick up a image and try it on <a href="https://upfi-l8ftkto8t-davilucena222.vercel.app/">Upfi</a>.
 </p>
 
 <img width="946" alt="image" src="https://user-images.githubusercontent.com/56702492/185013257-8ec38005-aa7c-4be2-9fc1-6913b84951e6.png">
