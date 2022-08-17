@@ -1,6 +1,8 @@
 # 🔖 Upfi
 
+<img width="947" alt="image" src="https://user-images.githubusercontent.com/56702492/185013116-175eb3b3-f52f-4a04-af63-336a0ba7dab7.png">
 
+<img width="945" alt="image" src="https://user-images.githubusercontent.com/56702492/185013207-88311e91-b0a4-4a30-a534-5618e13b96db.png">
 
 # 🔧 Tecnologies
 
@@ -30,6 +32,8 @@ This project was developed with the following tecnologies:
   Let's go! Pick up a image and try it.
 </p>
 
+<img width="946" alt="image" src="https://user-images.githubusercontent.com/56702492/185013257-8ec38005-aa7c-4be2-9fc1-6913b84951e6.png">
+
 # 🚀 Features
 
 <ul>
@@ -40,6 +44,7 @@ This project was developed with the following tecnologies:
   <li>Required title and description about the image</li>
   <li>Restriction on the format of images that can be uploaded</li>
   <li>All the requisitions is made it to a API Next that was created</li>
+  <li>A big view window to render the images</li>
 </ul>
 
 ## 💻 How to execute Upfi on your machine
